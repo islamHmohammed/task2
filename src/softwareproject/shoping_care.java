@@ -1,37 +1,33 @@
 package softwareproject;
 import java.util.ArrayList;
 public class shoping_care {
-	static int s;
-	public static ArrayList listbook= new ArrayList ();
+
+	ArrayList<Integer>listbook=new ArrayList<Integer>();
+	private int s=0;
+	
 	public int getcounter() {
-		// TODO Auto-generated method stub
+		
 		  return listbook.size();
       
 	}
-	public void add(String string) {
-		// TODO Auto-generated method stub
-		listbook.add("string");
-		
-	}
-	public int getprice() {
-		// TODO Auto-generated method stub
-		int s=listbook.size();
-		if(s==1) {
-			return 127;
-		}
-		else {
 
-			return 227;
-		}
+	public int getprice() {
+	for(int k=0; k <listbook.size();k++) {
+		s=s+listbook.get(k);
 	
+	}
+	return s;
+
 	}
 
 	public void clearp() {
-		// TODO Auto-generated method stub
 		listbook.clear();
-		
-		
-		
 	}
+	public void addbooks(String string, int i) {
+		// TODO Auto-generated method stub
+
+		listbook.add(i);
+	}
+	
 
 }
