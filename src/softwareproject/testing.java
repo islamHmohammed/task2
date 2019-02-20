@@ -1,11 +1,8 @@
 package softwareproject;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 class testing {
-
-	
-	
 	@Test
 	void test1() {
 		shoping_care obj1=new  shoping_care();
